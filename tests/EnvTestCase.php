@@ -4,9 +4,20 @@ namespace Sven\FlexEnv\Tests;
 
 use Sven\FlexEnv\Env;
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
+use Sven\FlexEnv\FlexEnvServiceProvider;
 
 abstract class EnvTestCase extends AbstractPackageTestCase
 {
+    protected $flex;
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function getRequiredServiceProviders($app)
+    {
+        return [FlexEnvServiceProvider::class];
+    }
+
     /**
      * Set up the testing suite.
      */
