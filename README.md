@@ -27,7 +27,7 @@ Alternatively, add the package to your dev dependencies in `composer.json` and r
 ```json
 {
     "require-dev": {
-        "sven/flex-env": "^2.0"
+        "sven/flex-env": "^3.0"
     }
 }
 ```
