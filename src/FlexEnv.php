@@ -4,7 +4,7 @@ namespace Sven\FlexEnv;
 
 use Illuminate\Support\Collection;
 
-class Env
+class FlexEnv
 {
     /**
      * @var bool
